@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/sourabhkumar27/Weather-Widget/issues"
   },
-  "homepage": "https://github.com/sourabhkumar27/Weather-Widget#readme"
+  "homepage": "https://github.com/sourabhkumar27/Weather-Widget#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
 }
