@@ -1,13 +1,11 @@
 const {src, dest, series, parallel} = require('gulp');
 const browsersync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
-const eslint = require('gulp-eslint');
 const concat = require('gulp-concat');
 const htmlReplace = require('gulp-html-replace');
 const cleanCss = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-const gulpEslint = require('gulp-eslint');
 
 function browserSync() {
   return browsersync.init({
@@ -42,8 +40,6 @@ function styles() {
 function scripts() {
   return src('src/scripts/*.js')
   .pipe(sourcemaps.init())
-  .pipe(eslint())
-  .pipe(eslint.format())
   .pipe(concat('bundle.js'))
   .pipe(uglify())
   .pipe(sourcemaps.write())
